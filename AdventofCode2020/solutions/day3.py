@@ -7,12 +7,11 @@ def vector_addition(x, y):
     return x
 
 
-def puzzle5(input, position=[0, 0]):
+def puzzle5(input, position=[0, 0], slope=[3, 1]):
     hill = [x for x in input.split("\n") if x]
     tree_count = 0
     hill_width = len(hill[0])
     hill_height = len(hill)
-    slope = [3, 1]
     while position[1] < hill_height:
         x = (position[0]) % hill_width
         y = position[1]
