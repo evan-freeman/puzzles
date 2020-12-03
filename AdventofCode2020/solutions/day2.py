@@ -27,12 +27,13 @@ def puzzle4(input):
     return valid_password_count
 
 
-sample_input2 = "1-3 a: abcde\n1-3 b: cdefg\n2-9 c: ccccccccc"
 
-input2 = open("input2.txt", "r").read()
 
 
 if __name__ == "__main__":
+    sample_input2 = "1-3 a: abcde\n1-3 b: cdefg\n2-9 c: ccccccccc"
+    input2 = open("input2.txt", "r").read()
+    
     print(puzzle3(sample_input2))
     print(puzzle3(input2))
 
